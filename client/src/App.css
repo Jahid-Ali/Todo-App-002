@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* background: linear-gradient(145deg, #e2e8ec, #ffffff); */
+
+.container {
+  background-color: #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.todo_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  z-index: 10;
+  background-color: #919191;
+  height: 8rem;
+  border-bottom: 2px solid rgb(130, 215, 228);
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 1rem;
+}
+
+.top input[type="text"] {
+  padding: 10px;
+  width: 65%;
+  border: 2px solid grey;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.top input[type="text"]:focus {
+  outline: none;
+}
+
+.top .button {
+  position: relative;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(145deg, #290357, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.top .button:hover {
+  box-shadow: 4px 4px 8px #290357, -4px -4px 8px #ffffff;
+}
+
+.list {
+  background: #ffffff;
+  width: 100%;
+  padding: 26px 80px;
+  position: relative;
+  top: 8rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.item_content {
+  width: 60%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(92, 92, 92);
+  font-size: 18px;
+}
+
+.item button {
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 0.5rem;
+}
+
+.update_item {
+  background: linear-gradient(145deg, #29952d, #0f5d0f);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  transition: 0.5s;
+}
+
+.update_item:hover {
+  box-shadow: 4px 4px 8px #007c04, -4px -4px 8px #ffffff;
+}
+
+.delete_item {
+  background: linear-gradient(145deg, #ff3c00, #581919);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  transition: 0.5s;
+}
+
+.delete_item:hover {
+  box-shadow: 4px 4px 8px #d33100, -4px -4px 8px #ffffff;
+}
